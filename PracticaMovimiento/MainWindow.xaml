@@ -1,0 +1,12 @@
+﻿<Window x:Class="PracticaMovimiento.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PracticaMovimiento"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Canvas Name="miCanvas" KeyDown="miCanvas_KeyDown" Focusable="True">
+        <Image Name="imgMega" Source="megamen.png" Height="150" Width="150" Stretch="Fill" Canvas.Left="325" Canvas.Top="246"></Image>
+    </Canvas>
+</Window>
