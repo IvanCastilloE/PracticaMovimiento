@@ -97,6 +97,9 @@
     <Content Include="descarga.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="gei.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="megamen.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

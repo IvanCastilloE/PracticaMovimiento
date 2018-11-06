@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Canvas Name="miCanvas" KeyDown="miCanvas_KeyDown" Focusable="True">
-        <Image Name="imgMega" Source="megamen.png" Height="150" Width="150" Stretch="Fill" Canvas.Left="325" Canvas.Top="246"></Image>
+        <Image Name="imgMega" Source="megamen.png" Height="100" Width="100" Stretch="Fill" Canvas.Left="10" Canvas.Top="309"/>
+        <Image Name="imgEnemigo" Source="gei.png" Width="70" Height="70" Stretch="Uniform" Canvas.Left="712" Canvas.Top="339" />
     </Canvas>
 </Window>
