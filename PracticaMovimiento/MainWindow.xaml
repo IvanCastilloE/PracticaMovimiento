@@ -9,5 +9,8 @@
     <Canvas Name="miCanvas" KeyDown="miCanvas_KeyDown" Focusable="True">
         <Image Name="imgMega" Source="megamen.png" Height="100" Width="100" Stretch="Fill" Canvas.Left="10" Canvas.Top="309"/>
         <Image Name="imgEnemigo" Source="gei.png" Width="70" Height="70" Stretch="Uniform" Canvas.Left="712" Canvas.Top="339" />
+        <TextBlock x:Name="lblInterseccionY" Canvas.Left="10" TextWrapping="Wrap" Text="No hay interseccion en Y" Canvas.Top="31"/>
+        <TextBlock x:Name="lblInterseccionX" Canvas.Left="10" TextWrapping="Wrap" Text="No hay interseccion en X" Canvas.Top="10"/>
+        <TextBlock x:Name="lblColicion" Canvas.Left="10" TextWrapping="Wrap" Text="No hay colisíon" Canvas.Top="52"/>
     </Canvas>
 </Window>

@@ -44,16 +44,38 @@ namespace PracticaMovimiento
         {
             while (true)
             {
+
                 Dispatcher.Invoke(
                     () =>
                     {
                         var tiempoActual = stopwatch.Elapsed;
                         var deltaTime = tiempoActual - tiempoAnterior;
                         double leftEnemigoActual = Canvas.GetLeft(imgEnemigo);
-                        Canvas.SetLeft(imgEnemigo, leftEnemigoActual - (100 * deltaTime.TotalSeconds) );
+                        Canvas.SetLeft(imgEnemigo, leftEnemigoActual - (150 * deltaTime.TotalSeconds) );
                         if (Canvas.GetLeft(imgEnemigo) <=-100)
                         {
                             Canvas.SetLeft(imgEnemigo, 800);
+                        }
+                        //Interseccion en X
+                        double xEnemigo = Canvas.GetLeft(imgEnemigo);
+                        double xMega = Canvas.GetLeft(imgMega);
+                        if (xMega+imgMega.Width>=xEnemigo && xMega<=xEnemigo+imgEnemigo.Width)
+                        {
+                            lblInterseccionX.Text = "Si hay interseccion en X!!!11!!uno";
+                        }
+                        else
+                        {
+                            lblInterseccionX.Text = "No hay interseccion en X";
+                        }
+                        double yEnemigo = Canvas.GetTop(imgEnemigo);
+                        double yMega = Canvas.GetTop(imgMega);
+                        if (yMega+imgMega.Height>=yEnemigo && yMega<=yEnemigo+imgEnemigo.Height)
+                        {
+                            lblInterseccionY.Text = "Si hay interseccion en Y!!!11!!uno";
+                        }
+                        else
+                        {
+                            lblInterseccionY.Text = "No hay interseccion en Y";
                         }
                         tiempoAnterior = tiempoActual;
                     }
